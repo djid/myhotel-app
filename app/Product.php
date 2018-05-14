@@ -3,11 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Nicolaslopezj\Searchable\SearchableTrait;
-
+use Laravel\Scout\Searchable;
+/*use Nicolaslopezj\Searchable\SearchableTrait;
+*/
 class Product extends Model
 {
-	use SearchableTrait;
+	/*use SearchableTrait;*/
+   use Searchable;
 
 	/**
      * Searchable rules.

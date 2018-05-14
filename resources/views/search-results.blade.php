@@ -1,5 +1,7 @@
 @extends('layouts/app')        
-
+@section('extra-css')
+<link rel="stylesheet" href="{{asset('css/algolia.css')}}">
+@endsection
 @section('content')
 
 <div class="banner_top innerpage" id="home"></div>
@@ -310,3 +312,8 @@
 
   </section>
 @stop
+@section('extra-js')
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script src="{{asset('js/algolia.js')}}"></script>
+@endsection
